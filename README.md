@@ -16,6 +16,10 @@ This enhancement makes each of the relays cotrollable from the WLED info setup a
 None of the original capabilities of the nulti-relay usermod have been modified or diminished in any way and still as usable as before.
 the below text is from that orginal mod modfied for alexa controls
 
+Currently alexa can send state changes to wled relays and they are reflected in  all the wled interfaces. However, I currently do not propagate the
+state changes that happen outside of alexa back to alexa - just havent figure out what the right UDP packet to send it as yet.
+However, alexa constantly polls the system for updated state to it updates itself - a slight delay but alexa eventually synchs up the state
+
 ![image](https://github.com/sgupta999/wled-alexa-relay-usermod/assets/35128032/32b7d704-bff5-4914-b1a6-ca6cd17881f0)
 ![image](https://github.com/sgupta999/wled-alexa-relay-usermod/assets/35128032/d3286dcb-c3b5-4741-8ee0-d8eb3d015c7e)
 ![image](https://github.com/sgupta999/wled-alexa-relay-usermod/assets/35128032/7f6ef617-d682-4a69-a54f-0694a9a66199)
