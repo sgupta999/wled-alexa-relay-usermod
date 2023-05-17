@@ -1,6 +1,7 @@
 # wled-alexa-relay-usermod
 
-## Controllable by Alexa - Multi Relay ## (Please still consider this a beta)
+## Controllable by Alexa - Multi Relay 
+### (Please still consider this a beta - only user will tell how well it works)
 
 So I really wanted the same esp32 to control both my SR Leds and my normal AC lights through alexa without having multiple contollers. I also wanted additional relay to control the DC PSU as that sits in the attic. Nothing quite matched my needs so I built excellent work done by many others.
 
