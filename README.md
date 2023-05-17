@@ -1,6 +1,9 @@
 # wled-alexa-relay-usermod
 
 ## Controllable by Alexa - Multi Relay
+
+So I really wanted the same esp32 to control both my SR Leds and my normal AC lights through alexa without having multiple contollers. I also wanted additional relay to control the DC PSU as that sits in the attic. Nothing quite matched my needs so I built excellent work done by many others.
+
 This usermod is a modificaiton of the original Multi-Relay usermod built by blazoncek.
 Since relays will now be exposed as additioanl devices to Alexa the base WLED build which uses Virtual Alexa devices to execute presets
 has been replaced with presets now being enabled by calling brightness events from 1-9.  Total brightness range is (1-100). For e.g.
