@@ -8,8 +8,13 @@ So I really wanted the same esp32 to control both my SR Leds and my normal AC li
 This usermod is a modificaiton of the original Multi-Relay usermod built by blazoncek.
 Since relays will now be exposed as additioanl devices to Alexa the base WLED build which uses Virtual Alexa devices to execute presets
 has been replaced with presets now being enabled by calling brightness events from 1-9.  Total brightness range is (1-100). For e.g.
+```
 "Alexa turn device brightness to 1" will execute preset 1
-"Alexa turn device brightness to 2" will execute preset 2   and so on.
+"Alexa turn device brightness to 2" will execute preset 2   and so on. 
+You can also say
+"Alexa set device to 1" to execute preset 1 etc
+```
+Please note that the atual brightess send by alexa can be off by a little depending on your retirement so the actual could be off by 1 either up or down. So you might get Preset 1 or Present3(more likely) when you are expecting preset 2 - butit will be consistent for your device once you figure out what it is 
 
 The assumption here being for brightness from 1-10 most people will not care much, as rarely will you call brightness below 10.
 Number of presets that can be mapped to each brightness value is controlled by (ESPALEXA_MAXDEVICES - 1) and is set to 9 by default as the original
