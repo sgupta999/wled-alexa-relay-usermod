@@ -1,5 +1,5 @@
 UPDATE: Please do not overwrite your fcn_declare.h with mine
-isntead make sure in the standard fcn_declare.h you add 
+instead make sure in the standard fcn_declare.h you add 
 ```
 void relaysOnAlexaChange(EspalexaDevice* dev); 
 ```
