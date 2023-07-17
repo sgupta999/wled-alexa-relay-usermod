@@ -1,3 +1,20 @@
+UPDATE: Please do not overwrite your fcn_declare.h with mine
+isntead make sure in the standard fcn_declare.h you add 
+```
+void relaysOnAlexaChange(EspalexaDevice* dev); 
+```
+in the following section
+```
+#ifndef WLED_DISABLE_ALEXA
+void onAlexaChange(EspalexaDevice* dev);
+void alexaInit();
+void handleAlexa();
+void onAlexaChange(EspalexaDevice* dev);
+void relaysOnAlexaChange(EspalexaDevice* dev);
+#endif
+
+```
+
 # wled-alexa-relay-usermod
 
 ## Controllable by Alexa - Multi Relay 
